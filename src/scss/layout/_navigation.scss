@@ -1,0 +1,54 @@
+.navigation-wrapper{
+    @include flex-center;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto;
+    padding: 15px 0px;   
+    justify-content: space-between;    
+    position: fixed;
+    top:0;
+    width: 100%;  
+    .logo{
+        margin-left: 20px;       
+        width: 150px;
+        height: auto;
+    }  
+    @include responsive (xs){
+        flex-direction: column;   
+    }
+    @include responsive (md){ 
+        .logo{                 
+            width: 200px;            
+        }    
+    }
+    @include responsive (lg){ 
+        .logo{                 
+            width: 240px;            
+        }    
+    }
+}
+
+.account-buttons-wrapper{
+    @include flex-center;
+    margin-right: 20px;    
+
+    img{
+        width:25px;
+        height: auto;
+    }
+
+    @include responsive (md){ 
+        img{
+            width:30px;            
+        }   
+    }
+    
+    @include responsive (lg){ 
+        img{
+            width:40px;            
+        }   
+    }
+}
+
+
+
+

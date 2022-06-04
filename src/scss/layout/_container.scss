@@ -1,0 +1,55 @@
+body{
+    padding:0;
+    margin: 0;
+    height:100%;   
+    background: black url('./assets/images/Hero-Image.jpg') center/contain no-repeat;
+    color: $light-font-color;
+    font-family: 'Cabin', sans-serif;          
+}
+
+.container{
+    display:flex; 
+    justify-content: center;  
+    height: 100vh;
+}
+
+.deposit-wrapper{
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap; 
+    row-gap: 2px;
+    align-self: flex-end;  
+    align-items: center; 
+    padding: 100px 0px 50px 0px;   
+    background-image: $black-to-transparent-gradient;
+    width:100%;   
+    h1{
+        font-size: 60px;                               
+        margin: 0px;        
+    }
+    
+    h2{        
+        font-size: 40px;
+        margin: 0;
+        padding: 5px 0px;
+    }   
+
+    @include responsive (md){ 
+        h1{           
+            font-size: 75px; 
+        }
+        h2{
+            font-size: 45px;                        
+        }  
+    }
+
+    @include responsive (lg){ 
+        h1{           
+            font-size: 100px; 
+        }
+        h2{           
+            font-size: 60px;                        
+        }  
+    }
+
+}

@@ -1,0 +1,50 @@
+button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.register-button{
+    @include primary-button;
+    font-size: 12px;    
+    padding: 10px 25px;
+    margin: 0px 20px;
+}
+
+.signup-button{
+    @include primary-button;
+    font-size: 16px;
+    padding: 15px 55px;  
+    margin: 20px 0px;  
+}
+
+@include responsive (md){ 
+    .register-button{
+        @include primary-button;
+        font-size: 18px;    
+        padding: 12px 30px;
+        margin: 0px 20px;
+    }
+
+    .signup-button{
+        @include primary-button;
+        font-size: 20px;
+        padding: 20px 55px;  
+        margin: 20px 0px;  
+    }
+}
+
+@include responsive (lg){ 
+    .register-button{
+        @include primary-button;
+        font-size: 20px;    
+        padding: 15px 35px;
+        margin: 0px 20px;
+    }
+
+    .signup-button{
+        @include primary-button;
+        font-size: 25px;
+        padding: 25px 80px;  
+        margin: 20px 0px;  
+    }
+}

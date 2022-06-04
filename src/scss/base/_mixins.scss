@@ -1,0 +1,45 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;       
+}
+
+@mixin primary-button{
+    background: $purple-gradient;
+    color: $light-font-color;
+    border-radius: 5px;
+    border: none;
+}
+
+@mixin responsive ($breakpoint) { 
+
+    @if $breakpoint == xs {    
+        @media (max-width: 339px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == sm {    
+        @media (min-width: 340px) and (max-width: 479px) {
+            @content;
+        }
+    }
+  
+    @if $breakpoint == md {    
+        @media (min-width: 480px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == lg {    
+        @media (min-width: 768px) and (max-width: 1023px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == xl {    
+        @media (min-width: 1024px){
+            @content;
+        }
+    }
+ 
+}
